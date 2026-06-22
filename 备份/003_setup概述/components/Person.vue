@@ -11,9 +11,11 @@
 <script lang="ts">
   export default {
     name:'Person',
+    //  Vue 组件创建流程的顺序：beforeCreate → created → beforeMount → mounted
     beforeCreate(){
       console.log('beforeCreate')
     },
+    // 在 Vue 组件创建流程里，setup 函数最先执行，比 beforeCreate 都要早
     setup(){
       console.log(this) //setup中的this是undefined，Vue3在弱化this了
       // 数据，原来是写在data中的，此时的name、age、tel都不是响应式的数据
