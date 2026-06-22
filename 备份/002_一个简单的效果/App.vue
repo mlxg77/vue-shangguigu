@@ -1,12 +1,13 @@
 <template>
   <div class="app">
     <h1>你好啊！</h1>
-    <Person/>
+    <!-- <Person/>  等价于 <Person></Person> -->
+    <Person/> 
   </div>
 </template>
 
 <script lang="ts">
-  import Person from './components/Person.vue'
+  import Person from './components/Person.vue' // 引入组件
 
   export default {
     name:'App', //组件名

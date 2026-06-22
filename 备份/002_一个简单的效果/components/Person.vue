@@ -10,7 +10,9 @@
 
 <script lang="ts">
   export default {
+    // 给当前组件起名字，主要是为了方便调试
     name:'Person',
+    // 组件的数据
     data(){
       return {
         name:'张三',
@@ -36,12 +38,14 @@
 </script>
 
 <style scoped>
+  /* 类选择器 */
   .person {
     background-color: skyblue;
     box-shadow: 0 0 10px;
     border-radius: 10px;
     padding: 20px;
   }
+  /* 按钮选择器*/
   button {
     margin: 0 5px;
   }
