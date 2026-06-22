@@ -12,14 +12,16 @@
 <script lang="ts" setup name="Person">
   import {ref} from 'vue'
 
-  // 数据，原来是写在data中的，此时的name、age、tel都不是响应式的数据
+  // 响应式数据
   let name = ref('张三')
   let age = ref(18)
+  // 非响应式数据
   let tel = '13888888888'
   let address = '北京昌平区宏福苑·宏福科技园'
 
   // 方法
   function changeName() {
+    // .value是ref对象中的一个属性，用于获取ref对象中的数据
     name.value = 'zhang-san' // JS中操作ref对象时候需要.value
     console.log(name.value) 
   }

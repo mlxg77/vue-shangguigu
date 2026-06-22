@@ -23,11 +23,11 @@
       
       // 方法
       function changeName() {
-        name = 'zhang-san' //注意：这样修改name，页面是没有变化的
+        name = 'zhang-san' //注意：这样修改name，页面是没有变化的，因为name不是响应式的
         console.log(name) //name确实改了，但name不是响应式的
       }
       function changeAge() {
-        age += 1 //注意：这样修改age，页面是没有变化的
+        age += 1 //注意：这样修改age，页面是没有变化的，因为age不是响应式的
         console.log(age) //age确实改了，但age不是响应式的
       }
       function showTel() {

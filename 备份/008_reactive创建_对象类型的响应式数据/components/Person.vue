@@ -5,6 +5,9 @@
     <br>
     <h2>游戏列表：</h2>
     <ul>
+      <!-- ":key"是v-bind:key的简写，用于给v-for循环的每个元素一个唯一的标识 -->
+      <!-- v-bind 是单向绑定：将数据绑定到元素上（把 JS 数据绑定到 HTML 属性上），使得元素的属性值与数据保持一致 -->
+      <!-- v-for 是循环渲染：将数据循环渲染到元素上 -->
       <li v-for="g in games" :key="g.id">{{g.name}}</li>
     </ul>
     <button @click="changeFirstGame">修改第一个游戏的名字</button>
