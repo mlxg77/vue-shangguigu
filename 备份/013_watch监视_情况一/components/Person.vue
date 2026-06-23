@@ -18,6 +18,7 @@
   const stopWatch = watch(sum,(newValue,oldValue)=>{
     console.log('sum变化了',newValue,oldValue)
     if(newValue >= 10){
+      // 停止监视
       stopWatch()
     }
   })
