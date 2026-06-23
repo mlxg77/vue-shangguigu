@@ -7,4 +7,5 @@ export interface PersonInter {
 
 // 一个自定义类型
 // export type Persons = Array<PersonInter>
+// Persons 是一个数组，数组里的每一项都必须符合
 export type Persons = PersonInter[]

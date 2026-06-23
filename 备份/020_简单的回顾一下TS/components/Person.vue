@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts" setup name="Person">
-  import {type PersonInter,type Persons} from '@/types'
+  import {type PersonInter,type Persons} from '../types'
 
   // let person:PersonInter = {id:'asyud7asfd01',name:'张三',age:60}
 
