@@ -24,14 +24,15 @@
   }
 
   // 监视 -- watch实现
-  /* watch([temp,height],(value)=>{
-    // 从value中获取最新的水温(newTemp)、最新的水位(newHeight)
-    let [newTemp,newHeight] = value
-    // 逻辑
-    if(newTemp >= 60 || newHeight >= 80){
-      console.log('给服务器发请求')
-    }
-  }) */
+  // newValue 和 oldValue 只是第一个参数的名字，代表新值数组和旧值数组；
+  // watch([temp,height],(newValue,oldValue)=>{
+  //   // 从value中获取最新的水温(newTemp)、最新的水位(newHeight)
+  //   let [newTemp,newHeight] = newValue
+  //   // 逻辑
+  //   if(newTemp >= 60 || newHeight >= 80){
+  //     console.log('给服务器发请求')
+  //   }
+  // }) 
 
   // 监视 -- watchEffect实现
   watchEffect(()=>{
