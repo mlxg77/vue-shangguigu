@@ -15,7 +15,7 @@ export default function (){
       alert(error)
     }
   }
-  // 钩子
+  // onMounted（生命周期钩子函数）：当使用 useDog() 的组件挂载完成后，自动调用一次 getDog() 方法。
   onMounted(()=>{
     getDog()
   })

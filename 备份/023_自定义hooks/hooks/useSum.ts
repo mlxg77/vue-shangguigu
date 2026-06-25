@@ -12,7 +12,7 @@ export default function () {
     sum.value += 1
   }
 
-  // 钩子
+  // onMounted（生命周期钩子函数）：当使用 useSum() 的组件挂载完成后，自动调用一次 add() 方法。
   onMounted(()=>{
     add()
   })
