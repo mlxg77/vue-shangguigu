@@ -5,6 +5,11 @@
   </div>
 </template>
 
+<!-- 
+  首次挂载时控制台顺序是：创建 -> 挂载前 -> 子---挂载完毕 -> 父---挂载完毕
+  点击子组件按钮后，子组件更新，控制台会打印：更新前 -> 更新完毕
+  卸载组件时，控制台会打印：卸载前 -> 卸载完毕
+ -->
 <script lang="ts" setup name="Person">
   import {ref,onBeforeMount,onMounted,onBeforeUpdate,onUpdated,onBeforeUnmount,onUnmounted} from 'vue'
 
@@ -19,7 +24,7 @@
 
   // 挂载前
   onBeforeMount(()=>{
-    // console.log('挂载前')
+    console.log('挂载前')
   })
   // 挂载完毕
   onMounted(()=>{
@@ -27,19 +32,19 @@
   })
   // 更新前
   onBeforeUpdate(()=>{
-    // console.log('更新前')
+    console.log('更新前')
   })
   // 更新完毕
   onUpdated(()=>{
-    // console.log('更新完毕')
+    console.log('更新完毕')
   })
   // 卸载前
   onBeforeUnmount(()=>{
-    // console.log('卸载前')
+    console.log('卸载前')
   })
   // 卸载完毕
   onUnmounted(()=>{
-    // console.log('卸载完毕')
+    console.log('卸载完毕')
   })
 </script>
 
