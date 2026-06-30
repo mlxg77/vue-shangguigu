@@ -32,11 +32,13 @@
     box-shadow: 0 0 2px;
     font-size: 30px;
   }
+  /*  定义整个导航栏 */
   .navigate {
     display: flex;
     justify-content: space-around;
     margin: 0 100px;
   }
+  /* 定义导航栏中的每个链接 */
   .navigate a {
     display: block;
     text-align: center;
@@ -50,6 +52,7 @@
     font-size: 18px;
     letter-spacing: 5px;
   }
+  /* 定义导航栏中被激活的链接 */
   .navigate a.xiaozhupeiqi {
     background-color: #64967E;
     color: #ffc268;
