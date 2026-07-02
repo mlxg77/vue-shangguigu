@@ -1,5 +1,8 @@
 <template>
   <div class="app">
+    <!-- 头部区 -->
+    <!-- 功能上和 <h2 class="title">Vue路由测试</h2> 没有区别，
+         但在代码组织和样式隔离上，拆成独立组件更规范，项目越大优势越明显。-->
     <Header/>
     <!-- 导航区 -->
     <div class="navigate">

@@ -5,7 +5,7 @@
 <script setup lang="ts" name="Header">
   
 </script>
-
+<!--  scoped ==> .title 的样式只作用于 Header 内部，不会意外影响到其他组件。-->
 <style scoped>
   .title {
     text-align: center;

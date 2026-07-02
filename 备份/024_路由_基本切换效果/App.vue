@@ -3,12 +3,16 @@
     <h2 class="title">Vue路由测试</h2>
     <!-- 导航区 -->
     <div class="navigate">
+      <!-- 1. RouterLink负责切换路径-->
       <RouterLink to="/home" active-class="xiaozhupeiqi">首页</RouterLink>
       <RouterLink to="/news" active-class="xiaozhupeiqi">新闻</RouterLink>
       <RouterLink to="/about" active-class="xiaozhupeiqi">关于</RouterLink>
     </div>
     <!-- 展示区 -->
     <div class="main-content">
+      <!-- 2.<RouterView> 负责把匹配到的组件显示出来。
+                          根据当前浏览器的 URL 路径，这个 routes 数组里逐条匹配，
+                          找到 path 相等的那一条，就把对应的 component 渲染出来。-->
       <RouterView></RouterView>
     </div>
   </div>
