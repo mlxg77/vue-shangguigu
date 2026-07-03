@@ -4,8 +4,11 @@
     <!-- 导航区 -->
     <div class="navigate">
       <RouterLink to="/home" active-class="active">首页</RouterLink>
+      <!-- 静态、简单的路由跳转。等价于直接访问 /news，路径固定 -->
       <RouterLink to="/news" active-class="active">新闻</RouterLink>
-      <RouterLink :to="{path:'/about'}" active-class="active">关于</RouterLink>
+      <!-- 动态、复杂的路由跳转。等价于直接访问 /news?id=100&keyword=vue，路径可变 -->
+      <RouterLink :to="{ path: '/news', query: { id: 100, keyword: 'vue' } }">新闻详情</RouterLink>
+      <RouterLink to="/about" active-class="xiaozhupeiqi">关于</RouterLink>
     </div>
     <!-- 展示区 -->
     <div class="main-content">

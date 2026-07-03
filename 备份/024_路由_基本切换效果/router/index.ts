@@ -9,7 +9,9 @@ import About from '../components/About.vue'
 
 // 第二步：创建路由器
 const router = createRouter({
-  history:createWebHistory(), //路由器的工作模式（稍后讲解）
+  // createWebHistory：创建一个 HTML5 历史模式的路由
+  // 让路由跳转时把记录写入浏览器历史栈，这样用户点击浏览器的"返回"按钮就能回到上一个浏览的页面。
+  history:createWebHistory(), 
   routes:[ //一个一个的路由规则
     {
       path:'/home',
