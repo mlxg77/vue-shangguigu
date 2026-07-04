@@ -3,10 +3,10 @@
 // 第一步：引入createRouter
 import {createRouter,createWebHistory,createWebHashHistory} from 'vue-router'
 // 引入一个一个可能要呈现组件
-import Home from '@/pages/Home.vue'
-import News from '@/pages/News.vue'
-import About from '@/pages/About.vue'
-import Detail from '@/pages/Detail.vue'
+import Home from '../pages/Home.vue'
+import News from '../pages/News.vue'
+import About from '../pages/About.vue'
+import Detail from '../pages/Detail.vue'
 
 // 第二步：创建路由器
 const router = createRouter({
@@ -21,8 +21,10 @@ const router = createRouter({
       name:'xinwen',
       path:'/news',
       component:News,
+      // 嵌套路由
       children:[
         {
+          // 嵌套路由规则，路径为detail，组件为Detail
           path:'detail',
           component:Detail
         }

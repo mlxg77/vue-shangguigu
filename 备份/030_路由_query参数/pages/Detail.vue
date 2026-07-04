@@ -9,9 +9,10 @@
 <script setup lang="ts" name="About">
   import {toRefs} from 'vue'
   import {useRoute} from 'vue-router'
+  // useRoute() 是 Vue Router 提供的组合式 API，用于在 setup 中获取当前路由的信息。
   let route = useRoute()
+  // toRefs() 是 Vue 提供的组合式 API，用于将响应式对象转换为普通对象，并保持响应性。
   let {query} = toRefs(route)
-
 
 </script>
 
