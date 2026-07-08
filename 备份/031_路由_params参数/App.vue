@@ -5,6 +5,7 @@
     <div class="navigate">
       <RouterLink to="/home" active-class="active">首页</RouterLink>
       <RouterLink :to="{name:'xinwen'}" active-class="active">新闻</RouterLink>
+      <!-- 等价于<==><RouterLink to="/news" active-class="active">新闻</RouterLink> -->
       <RouterLink :to="{path:'/about'}" active-class="active">关于</RouterLink>
     </div>
     <!-- 展示区 -->

@@ -3,10 +3,10 @@
 // 第一步：引入createRouter
 import {createRouter,createWebHistory,createWebHashHistory} from 'vue-router'
 // 引入一个一个可能要呈现组件
-import Home from '@/pages/Home.vue'
-import News from '@/pages/News.vue'
-import About from '@/pages/About.vue'
-import Detail from '@/pages/Detail.vue'
+import Home from '../pages/Home.vue'
+import News from '../pages/News.vue'
+import About from '../pages/About.vue'
+import Detail from '../pages/Detail.vue'
 
 // 第二步：创建路由器
 const router = createRouter({
@@ -21,16 +21,20 @@ const router = createRouter({
       name:'xinwen',
       path:'/news',
       component:News,
+      // 如何让组件更方便地接收参数（数据接过来后怎么用得更优雅）。
       children:[
         {
           name:'xiang',
           path:'detail',
           component:Detail,
 
+          // props 是 Vue 中用于父组件向子组件单向传递数据的机制，它保证了数据流的可控性，并极大提升了组件的复用性和健壮性。
+
           // 第一种写法：将路由收到的所有params参数作为props传给路由组件
           // props:true,
 
           // 第二种写法：函数写法，可以自己决定将什么作为props给路由组件
+          // 路由器（Router）在给路由组件传值时，会自动将query参数作为props传递给路由组件
           props(route){
             return route.query
           }

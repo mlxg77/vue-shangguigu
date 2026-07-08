@@ -33,6 +33,7 @@
   import {RouterView,RouterLink} from 'vue-router'
 
   const newsList = reactive([
+    // /news/detail?id=asfdtrfay01&title=很好的抗癌食物&content=西蓝花
     {id:'asfdtrfay01',title:'很好的抗癌食物',content:'西蓝花'},
     {id:'asfdtrfay02',title:'如何一夜暴富',content:'学IT'},
     {id:'asfdtrfay03',title:'震惊，万万没想到',content:'明天是周一'},
