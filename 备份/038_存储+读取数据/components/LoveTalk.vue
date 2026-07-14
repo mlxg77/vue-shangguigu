@@ -11,7 +11,7 @@
   import {reactive} from 'vue'
   import axios from "axios";
   import {nanoid} from 'nanoid'
-  import {useTalkStore} from '@/store/loveTalk'
+  import {useTalkStore} from '../store/loveTalk'
 
   const talkStore = useTalkStore()
   

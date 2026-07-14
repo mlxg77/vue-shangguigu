@@ -15,7 +15,7 @@
 <script setup lang="ts" name="Count">
   import { ref,reactive } from "vue";
   // 引入useCountStore
-  import {useCountStore} from '@/store/count'
+  import {useCountStore} from '../store/count'
   // 使用useCountStore，得到一个专门保存count相关的store
   const countStore = useCountStore()
 

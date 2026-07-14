@@ -8,7 +8,7 @@
 </template>
 
 <script setup lang="ts" name="LoveTalk">
-  import {useTalkStore} from '@/store/loveTalk'
+  import {useTalkStore} from '../store/loveTalk'
 
   const talkStore = useTalkStore()
   
