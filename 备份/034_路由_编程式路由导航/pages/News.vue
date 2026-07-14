@@ -3,7 +3,9 @@
     <!-- 导航区 -->
     <ul>
       <li v-for="news in newsList" :key="news.id">
+        <!-- 编程式导航 -->
         <button @click="showNewsDetail(news)">查看新闻</button>
+        <!-- 声明式导航 -->
         <RouterLink 
           :to="{
             name:'xiang',
