@@ -20,10 +20,16 @@
   // 方法
   async function getLoveTalk(){
     // 发请求，下面这行的写法是：连续解构赋值+重命名
+    // 和下面等价的罗嗦写法：
+    // let res = await axios.get('...')
+    // let title = res.data.content
+    // axios = 前端发请求的常用工具库，比原生的更方便。
     let {data:{content:title}} = await axios.get('https://api.uomg.com/api/rand.qinghua?format=json')
     // 把请求回来的字符串，包装成一个对象
+    // nanoid是一个生成唯一id的函数
     let obj = {id:nanoid(),title}
     // 放到数组中
+    // unshift 是数组方法，把 obj 加到数组最前面（区别于 push 加到末尾）。
     talkList.unshift(obj)
   }
 </script>
